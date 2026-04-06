@@ -15,7 +15,9 @@ app.use(morgan("dev"));
 
 
 // TODO 6.1: Create root route "/"
-
+app.get('/', (req, res) => {
+    res.send('Welcome to the home page!');
+});
 
 // TODO 6.2: Create "/api/quote" route
 
